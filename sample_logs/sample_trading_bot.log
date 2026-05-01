@@ -1,0 +1,20 @@
+2025-05-01 10:12:03 | INFO     | trading_bot.cli | Placing BUY MARKET order | symbol=BTCUSDT qty=0.001
+2025-05-01 10:12:03 | DEBUG    | trading_bot.client | → POST /fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1746087123412}
+2025-05-01 10:12:03 | DEBUG    | trading_bot.client | ← 200 {"orderId":4023971882,"symbol":"BTCUSDT","status":"FILLED","clientOrderId":"web_pS9ZvWDJPHu2C3RkX1Ls","price":"0","avgPrice":"93512.10","origQty":"0.001","executedQty":"0.001","cumQuote":"93.51210","timeInForce":"GTC","type":"MARKET","side":"BUY","stopPrice":"0","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","updateTime":1746087123543}
+2025-05-01 10:12:03 | INFO     | trading_bot.orders | Order placed successfully | orderId=4023971882 status=FILLED executedQty=0.001
+
+2025-05-01 10:15:47 | INFO     | trading_bot.cli | Placing SELL LIMIT order | symbol=BTCUSDT qty=0.001 price=96000.0
+2025-05-01 10:15:47 | DEBUG    | trading_bot.client | → POST /fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 96000.0, 'timeInForce': 'GTC', 'timestamp': 1746087347891}
+2025-05-01 10:15:47 | DEBUG    | trading_bot.client | ← 200 {"orderId":4023984210,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"web_mK7TzWQRVHn9A2YeB3Cx","price":"96000.00","avgPrice":"0.00","origQty":"0.001","executedQty":"0.000","cumQuote":"0.00","timeInForce":"GTC","type":"LIMIT","side":"SELL","stopPrice":"0","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","updateTime":1746087347943}
+2025-05-01 10:15:47 | INFO     | trading_bot.orders | Order placed successfully | orderId=4023984210 status=NEW executedQty=0.0
+
+2025-05-01 10:18:22 | INFO     | trading_bot.cli | Placing BUY STOP_LIMIT order | symbol=BTCUSDT qty=0.002 price=94000.0
+2025-05-01 10:18:22 | DEBUG    | trading_bot.client | → POST /fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP', 'quantity': 0.002, 'price': 94000.0, 'stopPrice': 94500.0, 'timeInForce': 'GTC', 'timestamp': 1746087502113}
+2025-05-01 10:18:22 | DEBUG    | trading_bot.client | ← 200 {"orderId":4024001774,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"web_nJ8UaBQSWHo0B3ZfC4Dy","price":"94000.00","avgPrice":"0.00","origQty":"0.002","executedQty":"0.000","cumQuote":"0.00","timeInForce":"GTC","type":"STOP","side":"BUY","stopPrice":"94500.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"STOP","updateTime":1746087502204}
+2025-05-01 10:18:22 | INFO     | trading_bot.orders | Order placed successfully | orderId=4024001774 status=NEW executedQty=0.0
+
+2025-05-01 10:21:05 | ERROR    | trading_bot.orders | Validation failed: Invalid side 'LONG'. Must be one of: BUY, SELL.
+2025-05-01 10:21:05 | INFO     | trading_bot.cli | [VALIDATION ERROR] Invalid side 'LONG'. Must be one of: BUY, SELL.
+
+2025-05-01 10:23:18 | ERROR    | trading_bot.orders | API error placing order: Binance API error -1121: Invalid symbol.
+2025-05-01 10:23:18 | INFO     | trading_bot.cli | [API ERROR] Binance API error -1121: Invalid symbol.
