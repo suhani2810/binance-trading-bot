@@ -51,7 +51,7 @@ Each layer has a single responsibility:
 - Orders builds correct payloads
 - Client handles all REST communication and signing
 
-## 🚀 Quick Start (2 minutes)
+## 🚀 Quick Start 
 
 ```bash
 python -m venv .venv
@@ -68,8 +68,9 @@ python cli.py --symbol BTCUSDT --side BUY --type MARKET --qty 0.001
 ### 1. Get Testnet API Credentials
 
 1. Go to [https://testnet.binancefuture.com](https://testnet.binancefuture.com)
-2. Log in (GitHub OAuth is supported)
-3. Navigate to **API Management** → generate a key pair
+2. Log in
+3. Click on start demo trading
+3. Navigate to **Demo trading API** → Create API ( top right corner)
 4. Copy your **API Key** and **Secret**
 
 ### 2. Clone & Install
@@ -104,8 +105,6 @@ Your `.env` should look like:
 BINANCE_API_KEY=abc123...
 BINANCE_API_SECRET=xyz456...
 ```
-
-> **Note:** Never commit your `.env` file. Add it to `.gitignore`.
 
 ---
 
